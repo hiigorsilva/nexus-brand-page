@@ -116,7 +116,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5rem 0;
-  min-height: 100vh;
+  height: 100vh;
 }
 .hero .content .headline {
   display: flex;
@@ -673,19 +673,23 @@ img {
 @media (max-width: 920px) {
   .hero {
     align-items: flex-end;
-    background: url("../imagens/bg-hero-mobile.png");
+    background: url("../imagens/bg-hero-mobile-mais-transparence.png");
     background-color: var(--bgTextMain);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .hero .headline {
+    align-items: center;
     margin: 0 auto;
     text-align: center;
   }
   .hero .content .headline > img {
     margin-left: auto;
     margin-right: auto;
+  }
+  .hero .content .arrow-down {
+    display: none;
   }
   .hero .headline .cta {
     margin-left: auto;
@@ -755,9 +759,6 @@ img {
   }
   .hero .content .headline h1 {
     font-size: 2.25rem;
-  }
-  .hero .content .arrow-down {
-    display: none;
   }
   .cta,
   .about .content .rightside .cta {
