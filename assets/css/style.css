@@ -694,6 +694,8 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 30vh;
+    padding-bottom: 3rem;
+    height: fit-content;
   }
   .hero .headline {
     align-items: center;
@@ -709,7 +711,7 @@ img {
     margin-right: auto;
   }
   .hero .content .arrow-down {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -780,9 +782,6 @@ img {
   .hero .content .headline h1 > span {
     display: inline;
   }
-  .hero .content .arrow-down {
-    display: none;
-  }
   .cta,
   .about .content .rightside .cta {
     max-width: none;
@@ -825,7 +824,25 @@ img {
     );
   }
 }
+@media (max-width: 500px) {
+  .hero {
+    padding-top: 25vh;
+  }
+  .hero .content .arrow-down {
+    margin-top: 2rem;
+    max-width: 1.125rem;
+  }
+}
 @media (max-width: 400px) {
+  .title h2 {
+    font-size: 1.5rem;
+  }
+  .hero .content .headline img {
+    max-width: 5.5rem;
+  }
+  .hero .content .headline h1 {
+    font-size: 1.625rem;
+  }
   .cta {
     padding-left: 0;
     padding-right: 0;
