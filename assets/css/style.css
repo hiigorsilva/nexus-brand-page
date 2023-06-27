@@ -85,7 +85,7 @@ img {
     var(--accentLight) 100%
   );
   color: var(--bgTextWhite);
-  padding: 1rem 2.5rem;
+  padding: 1rem 4rem;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -538,7 +538,7 @@ img {
   -webkit-text-fill-color: transparent;
 }
 .cta-final .cta {
-  margin: 2rem auto 0 auto;
+  margin: 4rem auto 0 auto;
 }
 
 /*:::::::::: ABOUT ::::::::::*/
@@ -696,6 +696,10 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .footer .container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
 }
 @media (max-width: 600px) {
   .cta,
@@ -738,5 +742,15 @@ img {
       var(--grayLight) 50%,
       transparent 100%
     );
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer .copy {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
