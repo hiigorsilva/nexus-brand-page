@@ -233,7 +233,11 @@ img {
 /*:::::::::: TARGET ::::::::::*/
 .target {
   padding: 7.5rem 0;
-  background-color: var(--bgTextLight);
+  background: linear-gradient(
+    180deg,
+    var(--bgTextWhite) 0%,
+    var(--bgTextLight) 100%
+  );
 }
 .target .card-target {
   display: flex;
@@ -636,7 +640,6 @@ img {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-
 @media (max-width: 1200px) {
   .hero,
   .info,
@@ -658,6 +661,18 @@ img {
   }
 }
 @media (max-width: 1000px) {
+  .hero .content .headline {
+    max-width: 32rem;
+  }
+  .hero .content .headline h1 > span {
+    display: block;
+  }
+  .hero .content .headline p {
+    max-width: none;
+  }
+  .hero .content .arrow-down {
+    margin-top: 1.5rem;
+  }
   .portfolio .projects {
     flex-direction: column;
     align-items: center;
@@ -672,12 +687,13 @@ img {
 }
 @media (max-width: 920px) {
   .hero {
-    align-items: flex-end;
+    align-items: flex-start;
     background: url("../imagens/bg-hero-mobile-mais-transparence.png");
     background-color: var(--bgTextMain);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 30vh;
   }
   .hero .headline {
     align-items: center;
@@ -687,9 +703,6 @@ img {
   .hero .content .headline > img {
     margin-left: auto;
     margin-right: auto;
-  }
-  .hero .content .arrow-down {
-    display: none;
   }
   .hero .headline .cta {
     margin-left: auto;
@@ -754,11 +767,21 @@ img {
   .title h2 {
     font-size: 1.625rem;
   }
+  .hero .content .headline > img {
+    margin-left: 0;
+  }
   .hero .content .headline {
-    max-width: 25rem;
+    max-width: none;
+    text-align: start;
   }
   .hero .content .headline h1 {
     font-size: 2.25rem;
+  }
+  .hero .content .headline h1 > span {
+    display: inline;
+  }
+  .hero .content .arrow-down {
+    display: none;
   }
   .cta,
   .about .content .rightside .cta {
