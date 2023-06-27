@@ -77,6 +77,7 @@ img {
   align-items: center;
   gap: 1rem;
   max-width: fit-content;
+  min-height: 3.5rem;
   font-size: 1rem;
   font-weight: 400;
   background: linear-gradient(
@@ -85,7 +86,7 @@ img {
     var(--accentLight) 100%
   );
   color: var(--bgTextWhite);
-  padding: 1rem 4rem;
+  padding: 0rem 4rem;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -165,7 +166,8 @@ img {
 }
 .hero .content .headline .cta img {
   max-width: 1.25rem;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .hero .content .arrow-down {
   margin: 2rem auto 0 auto;
@@ -648,6 +650,38 @@ img {
   .portfolio .projects {
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
+  }
+  .portfolio .projects .item:nth-child(odd) {
+    margin-top: 0;
+  }
+  .portfolio .projects .item .id-except {
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 920px) {
+  .hero {
+    align-items: flex-end;
+    background: url("../imagens/bg-hero-mobile.png");
+    background-color: var(--bgTextMain);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero .headline {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero .content .headline > img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .headline .cta {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .content .arrow-down {
+    margin-top: 3rem;
   }
 }
 @media (max-width: 768px) {
@@ -702,6 +736,15 @@ img {
   }
 }
 @media (max-width: 600px) {
+  .title h2 {
+    font-size: 1.625rem;
+  }
+  .hero .content .headline {
+    max-width: 25rem;
+  }
+  .hero .content .headline h1 {
+    font-size: 2.25rem;
+  }
   .cta,
   .about .content .rightside .cta {
     max-width: none;
