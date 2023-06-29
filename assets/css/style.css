@@ -45,7 +45,8 @@ img {
   gap: 0.5rem;
 }
 .title .top img {
-  min-height: 0.5rem;
+  max-width: 3rem;
+  width: 100%;
 }
 .title .top span {
   display: block;
@@ -116,7 +117,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5rem 0;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
 }
 .hero .content .headline {
   display: flex;
@@ -148,7 +150,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   max-width: 21.25rem;
-  color: var(--bgTextLight);
+  color: var(--grayLight);
   margin: 1rem 0 2rem 0;
 }
 .hero .content .headline p > span {
@@ -602,7 +604,7 @@ img {
 }
 .footer .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .footer .copy {
@@ -624,7 +626,21 @@ img {
 .footer .socials {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+}
+.footer .socials a {
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+.footer .socials a:hover {
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
 }
 .footer .socials img {
   background: linear-gradient(
@@ -687,7 +703,7 @@ img {
 }
 @media (max-width: 920px) {
   .hero {
-    align-items: flex-start;
+    align-items: center;
     background: url("../imagens/bg-hero-mobile-mais-transparence.png");
     background-color: var(--bgTextMain);
     background-position: center top;
@@ -715,6 +731,9 @@ img {
   }
 }
 @media (max-width: 768px) {
+  .hero .content .headline img {
+    max-width: 5rem;
+  }
   .target .card-target .item {
     max-width: none;
     width: 100%;
@@ -777,16 +796,26 @@ img {
     text-align: start;
   }
   .hero .content .headline h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
   .hero .content .headline h1 > span {
     display: inline;
+  }
+  .hero .content .headline p {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
   }
   .cta,
   .about .content .rightside .cta {
     max-width: none;
     width: 100%;
     justify-content: center;
+  }
+  .hero .content .arrow-down {
+    margin-top: 2rem;
+    max-width: 1rem;
   }
   .info ul {
     flex-direction: column;
@@ -822,6 +851,23 @@ img {
       var(--grayLight) 50%,
       transparent 100%
     );
+  }
+  .target .card-target .item img {
+    margin-top: -3.5rem;
+    max-width: 2.5rem;
+  }
+  .services .content .leftside img,
+  .faq .leftside .img-ask,
+  .about .content .leftside img {
+    max-width: 17rem;
+  }
+  .services .content .rightside .item .icon {
+    top: -1.3rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .services .content .rightside .item .icon img {
+    height: 1.4rem;
   }
 }
 @media (max-width: 500px) {
