@@ -720,6 +720,7 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 4rem;
+    margin-top: 4rem;
   }
   .portfolio .projects .item:nth-child(odd) {
     margin-top: 0;
