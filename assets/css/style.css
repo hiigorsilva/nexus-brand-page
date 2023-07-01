@@ -174,7 +174,7 @@ img {
 }
 .hero .content .arrow-down {
   margin: 2rem auto 0 auto;
-  max-width: 1.375rem;
+  max-width: 1rem;
 }
 
 /*:::::::::: INFO ::::::::::*/
@@ -447,6 +447,7 @@ img {
 .faq .leftside .img-ask {
   max-width: 24rem;
   width: 100%;
+  margin: auto auto auto 0;
 }
 .faq .rightside {
   flex: 1;
@@ -481,6 +482,18 @@ img {
   color: var(--grayLight);
   padding: 1.5rem 2rem;
   border-top: 1px solid var(--grayLight);
+}
+.faq .rightside .item ul {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--grayLight);
+  margin-top: -1rem;
+  padding: 0 2rem 1.5rem 3rem;
+  border-top: 0;
+}
+.faq .rightside .item ul li {
+  list-style: circle;
 }
 
 /*:::::::::: CTA FINAL ::::::::::*/
@@ -565,17 +578,22 @@ img {
   padding: 7.5rem 0;
   background-color: var(--bgTextWhite);
 }
+.about .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .about .content {
   display: flex;
 }
 .about .content .leftside {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .about .content .leftside img {
-  width: 100%;
+  width: 80%;
 }
 .about .content .rightside {
   flex: 1;
@@ -656,6 +674,8 @@ img {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+
+/*:::::::::: RESPONSIVE DEVICES ::::::::::*/
 @media (max-width: 1200px) {
   .hero,
   .info,
@@ -704,7 +724,7 @@ img {
 @media (max-width: 920px) {
   .hero {
     align-items: center;
-    background: url("../imagens/bg-hero-mobile-mais-transparence.png");
+    background: url("../imagens/bg-hero-mobile.png");
     background-color: var(--bgTextMain);
     background-position: center top;
     background-repeat: no-repeat;
@@ -725,9 +745,6 @@ img {
   .hero .headline .cta {
     margin-left: auto;
     margin-right: auto;
-  }
-  .hero .content .arrow-down {
-    margin-top: 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -813,10 +830,6 @@ img {
     width: 100%;
     justify-content: center;
   }
-  .hero .content .arrow-down {
-    margin-top: 2rem;
-    max-width: 1rem;
-  }
   .info ul {
     flex-direction: column;
     gap: 1rem;
@@ -869,13 +882,16 @@ img {
   .services .content .rightside .item .icon img {
     height: 1.4rem;
   }
+  .faq .rightside .item summary {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 @media (max-width: 500px) {
   .hero {
     padding-top: 25vh;
   }
   .hero .content .arrow-down {
-    margin-top: 2rem;
     max-width: 1.125rem;
   }
 }

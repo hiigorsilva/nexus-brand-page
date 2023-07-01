@@ -5,15 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexus Brand | Landing Pages de alta conversão</title>
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/icons/" type="image/x-icon">
+  <!--:::::::::: STYLE CSS ::::::::::-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--:::::::::: ANIMATE CSS ::::::::::-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
   <main class="hero">
     <div class="content container">
-      <div class="headline">
+      <div class="headline" data-aos="zoom-out-right">
         <img src="assets/imagens/logo-nexus.svg" alt="Logo da Nexus Brand">
         <h1>
           Eleve o nível de suas vendas com Landing Pages
@@ -47,21 +50,21 @@
         <h2>Nossas páginas são para você que é...</h2>
       </div>
       <div class="card-target">
-        <div class="item">
+        <div class="item" data-aos="fade-right">
           <img src="assets/icons/target.svg" alt="Ícone de alvo">
           <h3>Infoprodutor e afiliado</h3>
           <p>
             Alavanque suas vendas e conquiste resultados extraordinários em seus lançamentos e campanhas de afiliação.
           </p>
         </div>
-        <div class="item">
+        <div class="item" data-aos="fade-up">
           <img src="assets/icons/target.svg" alt="Ícone de alvo">
           <h3>Empresário e empreendedor</h3>
           <p>
             Destaque-se no mercado com landing pages personalizadas que atraem mais clientes e impulsione sua empresa.
           </p>
         </div>
-        <div class="item">
+        <div class="item" data-aos="fade-left">
           <img src="assets/icons/target.svg" alt="Ícone de alvo">
           <h3>Freelancer e Autônomo</h3>
           <p>
@@ -81,10 +84,10 @@
         <h2>Landing Pages personalizadas de alta coversão</h2>
       </div>
       <div class="content">
-        <div class="leftside">
+        <div class="leftside" data-aos="fade-up">
           <img src="assets/imagens/img-phone.png" alt="Foguete sendo lançado de dentro do celular">
         </div>
-        <div class="rightside">
+        <div class="rightside" data-aos="fade-left">
           <div class="item">
             <div class="icon">
               <img src="assets/icons/card-lp.svg" alt="Ícone de Landing Page">
@@ -139,7 +142,7 @@
         </div>
         <h2>Veja os nossos principais cases de sucesso</h2>
       </div>
-      <div class="projects">
+      <div class="projects" data-aos="fade-up" data-aos-duration="1000">
         <a href="#" class="item">
           <img src="assets/imagens/thumb.jpg" alt="Capa do projeto">
           <div class="id-except">
@@ -177,7 +180,7 @@
   </section>
   <section class="faq">
     <div class="container">
-      <div class="leftside">
+      <div class="leftside" data-aos="fade-right">
         <div class="title">
           <div class="top">
             <img src="assets/icons/arrow-tag.svg" alt="Marcação de título">
@@ -187,8 +190,19 @@
         </div>
         <img class="img-ask" src="assets/imagens/img-ask.svg" alt="Ilustração de interrogação">
       </div>
-      <div class="rightside">
+      <div class="rightside" data-aos="fade-left">
         <details open class="item">
+          <summary>O que enviar para começar a produção da(s) página(s)?</summary>
+          <p>
+            Você deverá enviar as seguintes elementos:
+          </p>
+          <ul>
+            <li>Copy (texto persuasivo) da página, já que não fazemos esse serviço.</li>
+            <li>Fotos do especialista em alta qualidade.</li>
+            <li>Acesso a sua hospedagem e domínio (caso já tenha).</li>
+          </ul>
+        </details>
+        <details class="item">
           <summary>Quanto tempo pra minha página ficar pronta?</summary>
           <p>
             O prazo de conclusão dependerá da complexidade do projeto e das suas necessidades específicas. Porém, em
@@ -225,13 +239,12 @@
     </div>
   </section>
   <section class="cta-final">
-    <div class="container">
+    <div class="container" data-aos="zoom-in">
       <div class="title">
         <h2>Chega de <span>queimar dinheiro</span> com páginas que não convertem!</h2>
       </div>
       <p>
-        Alavanque seus resultados agora transformando seus visitantes em clientes e saia na frente de seus
-        concorrentes.
+        Saia na frente de seus concorrentes agora mesmo.
       </p>
       <a class="cta" href="#">
         <span>Solicitar orçamento</span>
@@ -249,10 +262,10 @@
         <h2>Descubra quem somos e por que somos a melhor escolha</h2>
       </div>
       <div class="content">
-        <div class="leftside">
+        <div class="leftside" data-aos="zoom-in-right">
           <img src="assets/imagens/img-astronaut.png" alt="Astronauta">
         </div>
-        <div class="rightside">
+        <div class="rightside" data-aos="zoom-in-left">
           <p>
             Somos uma equipe apaixonada por ajudar infoprodutores e empresários a alcançarem o sucesso online.
           </p>
@@ -283,9 +296,9 @@
         <span>2023 © Todos os direitos reservados.</span>
       </div>
       <div class="socials">
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <!-- <a href="#" target="_blank" rel="noopener noreferrer">
           <img src="assets/icons/behance.svg" alt="Ícone do Behance">
-        </a>
+        </a> -->
         <a href="https://www.instagram.com/nexus.brand/" target="_blank" rel="noopener noreferrer">
           <img src="assets/icons/instagram.svg" alt="Ícone do Instagram">
         </a>
@@ -293,6 +306,9 @@
     </div>
   </footer>
 
+  <!--:::::::::: ANIMATE JS ::::::::::-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
