@@ -514,10 +514,10 @@ img {
 .cta-final::before {
   content: "";
   display: block;
-  background: url("../imagens/cut-section.svg");
+  background: url("../icons/arrow-down-2.svg");
   background-repeat: no-repeat;
   background-position-x: center;
-  height: 1.5rem;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: -1px;
@@ -528,7 +528,7 @@ img {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-.cta-final::after {
+/* .cta-final::after {
   content: "";
   display: block;
   background: url("../imagens/cut-section-bottom.svg");
@@ -544,7 +544,7 @@ img {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-}
+} */
 .cta-final .title {
   display: flex;
   justify-content: center;
