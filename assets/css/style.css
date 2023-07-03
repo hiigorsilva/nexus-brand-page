@@ -127,7 +127,7 @@ img {
   max-width: 24.375rem;
 }
 .hero .content .headline img {
-  max-width: 7.5rem;
+  max-width: 6rem;
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -528,23 +528,6 @@ img {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-/* .cta-final::after {
-  content: "";
-  display: block;
-  background: url("../imagens/cut-section-bottom.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  height: 1.5rem;
-  width: 100%;
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-} */
 .cta-final .title {
   display: flex;
   justify-content: center;
@@ -613,6 +596,18 @@ img {
   font-size: 1.125rem;
   font-weight: 400;
   color: var(--grayMain);
+}
+.about .content .rightside p > span {
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right,
+    var(--accentMain) -40%,
+    var(--accentLight) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .about .content .rightside .cta {
   margin-top: 1rem;
@@ -796,6 +791,9 @@ img {
   }
   .about .content {
     flex-direction: column;
+  }
+  .about .content .leftside {
+    justify-content: center;
   }
   .about .content .leftside img {
     width: 80%;
