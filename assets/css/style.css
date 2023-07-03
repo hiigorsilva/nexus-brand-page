@@ -19,6 +19,10 @@ li {
 img {
   display: block;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 /*:::::::::: COLORS PALLET ::::::::::*/
 :root {
