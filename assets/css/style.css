@@ -24,7 +24,22 @@ body {
   overflow-x: hidden;
 }
 
-/*:::::::::: COLORS PALLET ::::::::::*/
+/*:::::::::: SCROLL BAR ::::::::::*/
+body::-webkit-scrollbar {
+  width: 0.6rem; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--bgTextWhite); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--grayLight);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
 :root {
   --accentMain: #384bf5;
   --accentLight: #7094f1;
