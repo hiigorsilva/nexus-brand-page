@@ -681,6 +681,46 @@ body {
   -o-border-radius: 4px;
 }
 
+/*:::::::::: PAGE 404 ::::::::::*/
+.bg-404 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("../imagens/bg-404.jpg") no-repeat center top/cover;
+}
+.bg-404 .container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.bg-404 .container .mensage-ops {
+  max-width: 22rem;
+}
+.bg-404 .container .mensage-ops > img {
+  max-width: 5rem;
+  margin-bottom: 0.5rem;
+}
+.bg-404 .container .mensage-ops h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--bgTextWhite);
+  line-height: 1.2;
+}
+.bg-404 .container .mensage-ops h1 > span {
+  display: block;
+  color: var(--accentLight);
+}
+.bg-404 .container .mensage-ops p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grayLight);
+  margin: 1rem 0;
+}
+.bg-404 .container .mensage-ops .cta {
+  min-height: 3rem;
+}
+
 /*:::::::::: RESPONSIVE DEVICES ::::::::::*/
 @media (max-width: 1200px) {
   .hero,
@@ -753,6 +793,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .bg-404 .container .mensage-ops h1 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 768px) {
   .hero .content .headline img {
@@ -809,6 +852,20 @@ body {
   .footer .container {
     flex-direction: column-reverse;
     gap: 2rem;
+  }
+  .bg-404 {
+    background: url("../imagens/bg-404-mobile.jpg") no-repeat center top/cover;
+  }
+  .bg-404 .container {
+    display: flex;
+    justify-content: center;
+  }
+  .bg-404 .container .mensage-ops {
+    max-width: 30rem;
+  }
+  .bg-404 .container .mensage-ops .cta {
+    max-width: none;
+    justify-content: center;
   }
 }
 @media (max-width: 600px) {
@@ -903,6 +960,9 @@ body {
   }
   .hero .content .arrow-down {
     max-width: 1.125rem;
+  }
+  .bg-404 .container .mensage-ops {
+    max-width: none;
   }
 }
 @media (max-width: 400px) {
