@@ -25,13 +25,16 @@ body {
 }
 
 /*:::::::::: SCROLL BAR ::::::::::*/
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.popup-content::-webkit-scrollbar {
   width: 0.6rem; /* width of the entire scrollbar */
 }
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,
+.popup-content::-webkit-scrollbar-track {
   background: var(--bgTextWhite); /* color of the tracking area */
 }
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.popup-content::-webkit-scrollbar-thumb {
   background-color: var(--grayLight);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -407,8 +410,16 @@ body::-webkit-scrollbar-thumb {
   gap: 2rem;
 }
 .portfolio .projects .item {
+  display: block;
+  background: transparent;
+  text-align: start;
+  max-height: 31.25rem;
+  height: 100%;
   max-width: 28.75rem;
   width: 100%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -432,6 +443,7 @@ body::-webkit-scrollbar-thumb {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  box-shadow: 2px 4px 1rem #1111113f;
 }
 .portfolio .projects .item .id-except {
   display: flex;
@@ -452,6 +464,56 @@ body::-webkit-scrollbar-thumb {
 }
 .portfolio .cta {
   margin: 4rem auto 0 auto;
+}
+
+/* POP-UP PORTFÓLIO */
+.popup-wrapper {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+}
+.popup-wrapper .popup {
+  position: relative;
+  height: 90%;
+  max-width: 1000px;
+  width: 90%;
+}
+.popup-wrapper .popup .popup-close {
+  position: absolute;
+  top: -1rem;
+  right: -5rem;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+.popup-wrapper .popup .popup-close img {
+  width: 3rem;
+}
+.popup-wrapper .popup-content {
+  max-height: 100%;
+  width: auto;
+  overflow-y: scroll;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.popup-wrapper .popup-content img {
+  background-position-y: top;
+  width: 100%;
+  height: auto;
 }
 
 /*:::::::::: FAQ ::::::::::*/
@@ -675,20 +737,16 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.2s ease-out;
 }
 .footer .socials a:hover {
-  transform: scale(0.98);
-  -webkit-transform: scale(0.98);
-  -moz-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  -o-transform: scale(0.98);
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 .footer .socials img {
-  background: linear-gradient(
-    130deg,
-    var(--accentMain) -40%,
-    var(--bgTextMain) 80%
-  );
+  max-width: 2.25rem;
+  background: transparent;
   padding: 4px;
-  border: 1px solid rgba(112, 148, 241, 0.2);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -758,9 +816,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 1000px) {
-  .hero .content .headline {
-    max-width: 32rem;
-  }
   .hero .content .headline h1 > span {
     display: block;
   }

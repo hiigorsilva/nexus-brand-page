@@ -8,7 +8,7 @@
   <!--:::::::::: FAVICON ::::::::::-->
   <link rel="shortcut icon" href="./assets/icons/favicon-light.svg" type="image/x-icon">
   <!--:::::::::: STYLE CSS ::::::::::-->
-  <link rel="stylesheet" href="./assets/css/style-minify.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <!--:::::::::: ANIMATE CSS ::::::::::-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
           de <span>alta conversão</span>
         </h1>
         <p>
-          Aumentamos seus resultados com páginas <span>sob medida</span> de alta performance, carregadas em até 3
+          Aumentamos seus resultados com páginas <span>sob medida</span> com carregamento em até 3
           segundos.
         </p>
         <a class="cta"
@@ -146,34 +146,34 @@
         <h2>Veja os nossos principais cases de sucesso</h2>
       </div>
       <div class="projects" data-aos="fade-up" data-aos-duration="1000">
-        <a href="#" class="item">
-          <img src="./assets/imagens/thumb.jpg" alt="Capa do projeto">
+        <button class="item" onclick="openPopup(0)">
+          <img src="./assets/imagens/project-direito-thumb.jpg" alt="Capa do projeto">
           <div class="id-except">
-            <h3>Projeto Alfa</h3>
-            <span>Página de Captura</span>
-          </div>
-        </a>
-        <a href="#" class="item">
-          <img src="./assets/imagens/thumb.jpg" alt="Capa do projeto">
-          <div class="id-except">
-            <h3>Projeto Beta</h3>
-            <span>Página de Obrigado</span>
-          </div>
-        </a>
-        <a href="#" class="item">
-          <img src="./assets/imagens/thumb.jpg" alt="Capa do projeto">
-          <div class="id-except">
-            <h3>Projeto Gama</h3>
+            <h3>Monteiro Verdasca Advogados</h3>
             <span>Página de Vendas</span>
           </div>
-        </a>
-        <a href="#" class="item">
+        </button>
+        <button class="item" onclick="openPopup(1)">
+          <img src="./assets/imagens/project-clinica-thumb.jpg" alt="Capa do projeto">
+          <div class="id-except">
+            <h3>Doctor Care - Assistência Médica</h3>
+            <span>Página de Vendas</span>
+          </div>
+        </button>
+        <button class="item" onclick="openPopup(2)">
+          <img src="./assets/imagens/project-medico-thumb.jpg" alt="Capa do projeto">
+          <div class="id-except">
+            <h3>Healhty Carely - Cuidados Médicos</h3>
+            <span>Página de Vendas</span>
+          </div>
+        </button>
+        <button class="item" onclick="openPopup(3)">
           <img src="./assets/imagens/thumb.jpg" alt="Capa do projeto">
           <div class="id-except">
-            <h3>Projeto Ômega</h3>
+            <h3>Projeto em construção</h3>
             <span>Página de Captura</span>
           </div>
-        </a>
+        </button>
       </div>
       <a class="cta"
         href="https://api.whatsapp.com/send?phone=5562998152434&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.">
@@ -181,6 +181,20 @@
         <img src="assets/icons/whatsapp.svg" alt="Ícone de WhatsApp">
       </a>
     </div>
+
+
+    <div class="popup-wrapper" onclick="closePopup()">
+      <div class="popup">
+        <button class="popup-close" onclick="closePopup()">
+          <img src="./assets/icons/close.svg" alt="Ícone de fechar">
+        </button>
+        <div class="popup-content">
+          <img id="project" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+
   </section>
   <section class="faq">
     <div class="container">
