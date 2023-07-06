@@ -20,3 +20,8 @@ function closePopup() {
   const popup = document.querySelector(".popup-wrapper")
   popup.style.display = "none"
 }
+document
+  .querySelector(".popup-content")
+  .addEventListener("click", function (event) {
+    event.stopPropagation()
+  })

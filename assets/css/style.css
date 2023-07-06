@@ -808,6 +808,10 @@ body::-webkit-scrollbar-thumb,
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+  .popup-wrapper .popup .popup-close {
+    top: 0rem;
+    right: 0rem;
+  }
 }
 @media (max-width: 1068px) {
   .target .card-target {
@@ -1022,6 +1026,12 @@ body::-webkit-scrollbar-thumb,
   .faq .rightside .item summary {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+  .popup-wrapper .popup {
+    height: 80%;
+  }
+  .popup-wrapper .popup .popup-close img {
+    width: 2rem;
   }
 }
 @media (max-width: 500px) {
