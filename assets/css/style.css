@@ -556,10 +556,38 @@ body::-webkit-scrollbar-thumb,
   box-shadow: 4px 4px 32px 0px rgba(3, 5, 19, 0.5);
 }
 .faq .rightside .item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   font-size: 1rem;
   font-weight: 600;
   color: var(--bgTextWhite);
   padding: 1.5rem 2rem;
+  list-style: none;
+  cursor: pointer;
+}
+.faq .rightside .item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq .rightside .item summary * span {
+  display: block;
+}
+.faq .rightside .item summary .caret-down {
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+}
+.faq .rightside .item[open] summary .caret-down {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
 }
 .faq .rightside .item p {
   font-size: 1rem;
