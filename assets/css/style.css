@@ -414,7 +414,6 @@ body::-webkit-scrollbar-thumb,
   display: block;
   background: transparent;
   text-align: start;
-  max-height: 31.25rem;
   height: 100%;
   max-width: 28.75rem;
   width: 100%;

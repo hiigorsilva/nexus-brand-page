@@ -9,7 +9,7 @@ function openPopup(index) {
     "./assets/imagens/project-direito.jpg",
     "./assets/imagens/project-clinica.jpg",
     "./assets/imagens/project-medico.jpg",
-    "./assets/imagens/thumb.jpg",
+    "./assets/imagens/project-ebook.jpg",
   ]
 
   popupImage.src = projectUrl[index]
