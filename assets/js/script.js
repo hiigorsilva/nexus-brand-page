@@ -8,7 +8,7 @@ function openPopup(index) {
   const projectUrl = [
     "./assets/imagens/project-direito.jpg",
     "./assets/imagens/project-clinica.jpg",
-    "./assets/imagens/project-medico.jpg",
+    "./assets/imagens/project-app.jpg",
     "./assets/imagens/project-ebook.jpg",
   ]
 
