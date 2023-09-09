@@ -789,6 +789,47 @@ body::-webkit-scrollbar-thumb,
 .bg-404 .container .mensage-ops .cta {
   min-height: 3rem;
 }
+.obg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("../imagens/bg-tankyou.jpg") top center/cover;
+}
+.obg .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.obg .content h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--bgTextLight);
+  max-width: 28.5rem;
+  margin-bottom: 1rem;
+}
+.obg .content h1 > span {
+  color: var(--accentLight);
+}
+.obg .content p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--grayLight);
+  max-width: 24.375rem;
+  margin-bottom: 2rem;
+}
+.obg .content > span {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--bgTextWhite);
+  margin-top: 2rem;
+}
+.obg .content > span > .counter {
+  color: var(--accentLight);
+}
+
 @media (max-width: 1200px) {
   .hero,
   .info,
@@ -798,7 +839,8 @@ body::-webkit-scrollbar-thumb,
   .faq,
   .cta-final,
   .about,
-  .footer {
+  .footer,
+  .obg {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -935,6 +977,15 @@ body::-webkit-scrollbar-thumb,
     max-width: none;
     justify-content: center;
   }
+  .obg {
+    background-position-x: left;
+  }
+  .obg .content h1 {
+    font-size: 2rem;
+  }
+  .obg .content > span {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 600px) {
   .title h2 {
@@ -1027,7 +1078,11 @@ body::-webkit-scrollbar-thumb,
   .popup-wrapper .popup .popup-close img {
     width: 2rem;
   }
+  .obg .content a.cta {
+    width: fit-content;
+  }
 }
+
 @media (max-width: 500px) {
   .hero {
     padding-top: 25vh;
@@ -1037,6 +1092,9 @@ body::-webkit-scrollbar-thumb,
   }
   .bg-404 .container .mensage-ops {
     max-width: none;
+  }
+  .obg .content a.cta {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
