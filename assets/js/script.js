@@ -7,9 +7,9 @@ function openPopup(index) {
   const popupImage = document.querySelector("#project")
   const projectUrl = [
     "./assets/imagens/project-consultoria.jpg",
-    "./assets/imagens/project-courses.jpg",
+    "./assets/imagens/project-oratoria.jpg",
     "./assets/imagens/project-app.jpg",
-    "./assets/imagens/project-ebook.jpg",
+    "./assets/imagens/project-consultoria360.jpg",
   ]
 
   popupImage.src = projectUrl[index]
