@@ -26,7 +26,6 @@ document
     event.stopPropagation()
   })
 
-/*
 // BLOQUEAR BOTÃO DIREITO DO MOUSE
 if (document.addEventListener) {
   document.addEventListener("contextmenu", function (e) {
@@ -64,4 +63,3 @@ function bloquearSource(e) {
     return false
   }
 }
-*/
