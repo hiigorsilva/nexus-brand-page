@@ -138,12 +138,12 @@ body::-webkit-scrollbar-thumb,
 .hero .content .headline {
   display: flex;
   flex-direction: column;
-  max-width: 24.375rem;
+  max-width: 30rem;
 }
 .hero .content .headline img {
   max-width: 6rem;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .hero .content .headline h1 {
   font-size: 2.5rem;
@@ -484,7 +484,7 @@ body::-webkit-scrollbar-thumb,
 }
 .services .content .rightside .item .description h3 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--bgTextLight);
 }
 .services .content .rightside .item .description p {
